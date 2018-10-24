@@ -1,0 +1,412 @@
+run ../../../Init_khusus_AA.con
+
+rem ********** Object Spawner **********
+rem [ObjectSpawnerTemplate: CP_BLUE_TEAM_ME_US_Fi_bomb]
+ObjectTemplate.create ObjectSpawner CP_BLUE_TEAM_ME_US_Fi_bomb
+ObjectTemplate.activeSafe ObjectSpawner CP_BLUE_TEAM_ME_US_Fi_bomb
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 ruair_su34
+ObjectTemplate.setObjectTemplate 2 USAIR_F15
+ObjectTemplate.minSpawnDelay 3
+ObjectTemplate.maxSpawnDelay 3
+ObjectTemplate.maxNrOfObjectSpawned 10
+ObjectTemplate.team 2
+ObjectTemplate.teamOnVehicle 1
+
+rem [ObjectSpawnerTemplate: CP_BLUE_TEAM_CH_US_HeavyTank_2]
+ObjectTemplate.create ObjectSpawner CP_BLUE_TEAM_CH_US_HeavyTank_2
+ObjectTemplate.activeSafe ObjectSpawner CP_BLUE_TEAM_CH_US_HeavyTank_2
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 air_j10
+ObjectTemplate.setObjectTemplate 2 usair_f18
+ObjectTemplate.minSpawnDelay 3
+ObjectTemplate.maxSpawnDelay 3
+ObjectTemplate.maxNrOfObjectSpawned 10
+ObjectTemplate.teamOnVehicle 1
+
+rem [ObjectSpawnerTemplate: CP_BLUE_TEAM_CH_US_HeavyTank_3]
+ObjectTemplate.create ObjectSpawner CP_BLUE_TEAM_CH_US_HeavyTank_3
+ObjectTemplate.activeSafe ObjectSpawner CP_BLUE_TEAM_CH_US_HeavyTank_3
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 usair_f18
+ObjectTemplate.setObjectTemplate 2 usair_f18
+ObjectTemplate.minSpawnDelay 3
+ObjectTemplate.maxSpawnDelay 3
+ObjectTemplate.maxNrOfObjectSpawned 10
+ObjectTemplate.teamOnVehicle 1
+
+rem [ObjectSpawnerTemplate: CP_BLUE_TEAM_CH_US_AAV]
+ObjectTemplate.create ObjectSpawner CP_BLUE_TEAM_CH_US_AAV
+ObjectTemplate.activeSafe ObjectSpawner CP_BLUE_TEAM_CH_US_AAV
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 air_j10
+ObjectTemplate.setObjectTemplate 2 usair_f18
+ObjectTemplate.minSpawnDelay 3
+ObjectTemplate.maxSpawnDelay 3
+ObjectTemplate.maxNrOfObjectSpawned 10
+
+rem [ObjectSpawnerTemplate: CP_RED_TEAM_ME_US_Fi_bomb]
+ObjectTemplate.create ObjectSpawner CP_RED_TEAM_ME_US_Fi_bomb
+ObjectTemplate.activeSafe ObjectSpawner CP_RED_TEAM_ME_US_Fi_bomb
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 air_su30mkk
+ObjectTemplate.setObjectTemplate 2 USAIR_F15
+ObjectTemplate.minSpawnDelay 3
+ObjectTemplate.maxSpawnDelay 3
+ObjectTemplate.maxNrOfObjectSpawned 10
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+
+rem [ObjectSpawnerTemplate: CP_RED_TEAM_ME_US_Fi_bomb_0]
+ObjectTemplate.create ObjectSpawner CP_RED_TEAM_ME_US_Fi_bomb_0
+ObjectTemplate.activeSafe ObjectSpawner CP_RED_TEAM_ME_US_Fi_bomb_0
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 air_su30mkk
+ObjectTemplate.setObjectTemplate 2 USAIR_F15
+ObjectTemplate.minSpawnDelay 3
+ObjectTemplate.maxSpawnDelay 3
+ObjectTemplate.maxNrOfObjectSpawned 10
+ObjectTemplate.team 1
+ObjectTemplate.teamOnVehicle 1
+
+rem [ObjectSpawnerTemplate: CP_RED_TEAM_ME_US_Fighter]
+ObjectTemplate.create ObjectSpawner CP_RED_TEAM_ME_US_Fighter
+ObjectTemplate.activeSafe ObjectSpawner CP_RED_TEAM_ME_US_Fighter
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 air_j10
+ObjectTemplate.setObjectTemplate 2 USAIR_F18
+ObjectTemplate.minSpawnDelay 3
+ObjectTemplate.maxSpawnDelay 3
+ObjectTemplate.maxNrOfObjectSpawned 10
+ObjectTemplate.teamOnVehicle 1
+
+rem [ObjectSpawnerTemplate: CP_RED_TEAM_CH_US_Fighter]
+ObjectTemplate.create ObjectSpawner CP_RED_TEAM_CH_US_Fighter
+ObjectTemplate.activeSafe ObjectSpawner CP_RED_TEAM_CH_US_Fighter
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 AIR_J10
+ObjectTemplate.setObjectTemplate 2 USAIR_F18
+ObjectTemplate.minSpawnDelay 3
+ObjectTemplate.maxNrOfObjectSpawned 10
+ObjectTemplate.useButtonRadius 3
+ObjectTemplate.teamOnVehicle 1
+
+rem [ObjectSpawnerTemplate: CP_RED_TEAM_CH_US_Fighter_0]
+ObjectTemplate.create ObjectSpawner CP_RED_TEAM_CH_US_Fighter_0
+ObjectTemplate.activeSafe ObjectSpawner CP_RED_TEAM_CH_US_Fighter_0
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.setObjectTemplate 1 AIR_J10
+ObjectTemplate.setObjectTemplate 2 USAIR_F18
+ObjectTemplate.minSpawnDelay 3
+ObjectTemplate.maxSpawnDelay 3
+ObjectTemplate.maxNrOfObjectSpawned 10
+ObjectTemplate.teamOnVehicle 1
+
+if v_arg1 == host
+
+   rem [ObjectSpawner: CP_BLUE_TEAM_ME_US_Fi_bomb]
+   Object.create CP_BLUE_TEAM_ME_US_Fi_bomb
+   Object.absolutePosition 2015.005/100.000/1930.385
+   Object.rotation 180.000/0.000/0.000
+   Object.setControlPointId 2
+   Object.layer 1
+
+   rem [ObjectSpawner: CP_BLUE_TEAM_CH_US_HeavyTank_2]
+   Object.create CP_BLUE_TEAM_CH_US_HeavyTank_2
+   Object.absolutePosition 1967.978/100.000/1929.082
+   Object.rotation 180.000/0.000/0.000
+   Object.setControlPointId 2
+   Object.layer 1
+
+   rem [ObjectSpawner: CP_BLUE_TEAM_CH_US_HeavyTank_3]
+   Object.create CP_BLUE_TEAM_CH_US_HeavyTank_3
+   Object.absolutePosition 1984.063/100.000/1929.358
+   Object.rotation 180.000/0.000/0.000
+   Object.setControlPointId 2
+   Object.layer 1
+
+   rem [ObjectSpawner: CP_BLUE_TEAM_CH_US_AAV]
+   Object.create CP_BLUE_TEAM_CH_US_AAV
+   Object.absolutePosition 1998.171/100.000/1930.213
+   Object.rotation 180.000/0.000/0.000
+   Object.setControlPointId 2
+   Object.layer 1
+
+   rem [ObjectSpawner: CP_RED_TEAM_ME_US_Fi_bomb]
+   Object.create CP_RED_TEAM_ME_US_Fi_bomb
+   Object.absolutePosition -2028.650/100.000/-1942.820
+   Object.rotation 0.000/0.000/0.000
+   Object.setControlPointId 1
+   Object.layer 1
+
+   rem [ObjectSpawner: CP_RED_TEAM_ME_US_Fi_bomb_0]
+   Object.create CP_RED_TEAM_ME_US_Fi_bomb_0
+   Object.absolutePosition -2001.998/100.000/-1946.223
+   Object.rotation 0.000/0.000/0.000
+   Object.setControlPointId 1
+   Object.layer 1
+
+   rem [ObjectSpawner: CP_RED_TEAM_ME_US_Fighter]
+   Object.create CP_RED_TEAM_ME_US_Fighter
+   Object.absolutePosition -1980.814/100.000/-1949.382
+   Object.rotation 0.000/0.000/0.000
+   Object.setControlPointId 1
+   Object.layer 1
+
+   rem [ObjectSpawner: CP_RED_TEAM_CH_US_Fighter]
+   Object.create CP_RED_TEAM_CH_US_Fighter
+   Object.absolutePosition -1958.120/100.000/-1954.715
+   Object.rotation 0.000/0.000/0.000
+   Object.setControlPointId 1
+   Object.layer 1
+
+   rem [ObjectSpawner: CP_RED_TEAM_CH_US_Fighter_0]
+   Object.create CP_RED_TEAM_CH_US_Fighter_0
+   Object.absolutePosition -1933.033/100.000/-1962.410
+   Object.rotation 0.000/0.000/0.000
+   Object.setControlPointId 1
+   Object.layer 1
+
+endIf
+
+rem ********** Spawn Points **********
+rem [SpawnPointTemplate: CP_RED_TEAM_3]
+ObjectTemplate.create SpawnPoint CP_RED_TEAM_3
+ObjectTemplate.activeSafe SpawnPoint CP_RED_TEAM_3
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 1
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setAllowSpawnCloseToVehicle 1
+
+rem [SpawnPoint: CP_RED_TEAM_3]
+Object.create CP_RED_TEAM_3
+Object.absolutePosition -2017.736/100.000/-1949.724
+Object.rotation 148.750/0.000/0.000
+Object.layer 1
+
+rem [SpawnPointTemplate: CP_BLUE_TEAM_3]
+ObjectTemplate.create SpawnPoint CP_BLUE_TEAM_3
+ObjectTemplate.activeSafe SpawnPoint CP_BLUE_TEAM_3
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setGroup 1
+ObjectTemplate.setControlPointId 2
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setAllowSpawnCloseToVehicle 1
+
+rem [SpawnPoint: CP_BLUE_TEAM_3]
+Object.create CP_BLUE_TEAM_3
+Object.absolutePosition 2025.380/100.000/1931.568
+Object.rotation -26.701/0.000/0.000
+Object.layer 1
+
+rem [SpawnPointTemplate: CP_BLUE_TEAM_4]
+ObjectTemplate.create SpawnPoint CP_BLUE_TEAM_4
+ObjectTemplate.activeSafe SpawnPoint CP_BLUE_TEAM_4
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 2
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setAllowSpawnCloseToVehicle 1
+
+rem [SpawnPoint: CP_BLUE_TEAM_4]
+Object.create CP_BLUE_TEAM_4
+Object.absolutePosition 1992.542/100.000/1932.141
+Object.rotation -31.130/0.000/0.000
+Object.layer 1
+
+rem [SpawnPointTemplate: CP_RED_TEAM_2]
+ObjectTemplate.create SpawnPoint CP_RED_TEAM_2
+ObjectTemplate.activeSafe SpawnPoint CP_RED_TEAM_2
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setGroup 1
+ObjectTemplate.setControlPointId 1
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setAllowSpawnCloseToVehicle 1
+
+rem [SpawnPoint: CP_RED_TEAM_2]
+Object.create CP_RED_TEAM_2
+Object.absolutePosition -1995.441/100.000/-1953.150
+Object.rotation -172.292/0.000/0.000
+Object.layer 1
+
+rem [SpawnPointTemplate: CP_RED_TEAM_3_0]
+ObjectTemplate.create SpawnPoint CP_RED_TEAM_3_0
+ObjectTemplate.activeSafe SpawnPoint CP_RED_TEAM_3_0
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 1
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setAllowSpawnCloseToVehicle 1
+
+rem [SpawnPoint: CP_RED_TEAM_3_0]
+Object.create CP_RED_TEAM_3_0
+Object.absolutePosition -1975.930/100.000/-1956.990
+Object.rotation -148.263/0.000/0.000
+Object.layer 1
+
+rem [SpawnPointTemplate: CP_RED_TEAM_4]
+ObjectTemplate.create SpawnPoint CP_RED_TEAM_4
+ObjectTemplate.activeSafe SpawnPoint CP_RED_TEAM_4
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setAllowSpawnCloseToVehicle 1
+
+rem [SpawnPoint: CP_RED_TEAM_4]
+Object.create CP_RED_TEAM_4
+Object.absolutePosition -1953.342/100.000/-1962.057
+Object.rotation -124.513/0.000/0.000
+Object.layer 1
+
+rem [SpawnPointTemplate: CP_RED_TEAM_5]
+ObjectTemplate.create SpawnPoint CP_RED_TEAM_5
+ObjectTemplate.activeSafe SpawnPoint CP_RED_TEAM_5
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 1
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setAllowSpawnCloseToVehicle 1
+
+rem [SpawnPoint: CP_RED_TEAM_5]
+Object.create CP_RED_TEAM_5
+Object.absolutePosition -1927.758/100.000/-1969.149
+Object.rotation -108.608/0.000/0.000
+Object.layer 1
+
+rem [SpawnPointTemplate: CP_BLUE_TEAM_3_0]
+ObjectTemplate.create SpawnPoint CP_BLUE_TEAM_3_0
+ObjectTemplate.activeSafe SpawnPoint CP_BLUE_TEAM_3_0
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 2
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setAllowSpawnCloseToVehicle 1
+
+rem [SpawnPoint: CP_BLUE_TEAM_3_0]
+Object.create CP_BLUE_TEAM_3_0
+Object.absolutePosition 1964.410/100.000/1932.782
+Object.rotation 11.087/0.000/0.000
+Object.layer 1
+
+rem [SpawnPointTemplate: CP_BLUE_TEAM_4_0]
+ObjectTemplate.create SpawnPoint CP_BLUE_TEAM_4_0
+ObjectTemplate.activeSafe SpawnPoint CP_BLUE_TEAM_4_0
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.setSpawnPositionOffset 0/1.25/0
+ObjectTemplate.setControlPointId 2
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setAllowSpawnCloseToVehicle 1
+
+rem [SpawnPoint: CP_BLUE_TEAM_4_0]
+Object.create CP_BLUE_TEAM_4_0
+Object.absolutePosition 1978.848/100.000/1933.085
+Object.rotation -3.381/0.000/0.000
+Object.layer 1
+
+rem ********** Control Points **********
+rem [ControlPointTemplate: CP_RED_TEAM]
+ObjectTemplate.create ControlPoint CP_RED_TEAM
+ObjectTemplate.activeSafe ControlPoint CP_RED_TEAM
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate flagpole
+rem -------------------------------------
+ObjectTemplate.setControlPointName CP_RED_TEAM
+ObjectTemplate.radius 10
+ObjectTemplate.team 1
+ObjectTemplate.controlPointId 1
+ObjectTemplate.timeToGetControl 300
+ObjectTemplate.timeToLoseControl 300
+ObjectTemplate.hoistMinMax 0.2/0.9
+
+rem [ControlPointTemplate: CP_BLUE_TEAM]
+ObjectTemplate.create ControlPoint CP_BLUE_TEAM
+ObjectTemplate.activeSafe ControlPoint CP_BLUE_TEAM
+ObjectTemplate.modifiedByUser "Zentarus111"
+ObjectTemplate.setNetworkableInfo ControlPointInfo
+ObjectTemplate.isNotSaveable 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate flagpole
+rem -------------------------------------
+ObjectTemplate.setControlPointName CP_BLUE_TEAM
+ObjectTemplate.radius 10
+ObjectTemplate.team 2
+ObjectTemplate.controlPointId 2
+ObjectTemplate.timeToGetControl 300
+ObjectTemplate.timeToLoseControl 300
+ObjectTemplate.hoistMinMax 0.2/0.9
+
+if v_arg1 == host
+
+   rem [ControlPoint: CP_RED_TEAM]
+   Object.create CP_RED_TEAM
+   Object.absolutePosition -1998.097/100.000/-1992.831
+   Object.layer 1
+
+   rem [ControlPoint: CP_BLUE_TEAM]
+   Object.create CP_BLUE_TEAM
+   Object.absolutePosition 1975.517/100.000/1989.467
+   Object.layer 1
+
+endIf
+
+CombatAreaManager.use 1
+CombatAreaManager.timeAllowedOutside 10.000000
+CombatArea.create CombatArea_0_only_jet
+CombatArea.min 0.000000/0.000000
+CombatArea.max 0.000000/0.000000
+CombatArea.addAreaPoint 2047.631348/2047.768066
+CombatArea.addAreaPoint 2046.929688/-2046.981079
+CombatArea.addAreaPoint -2047.619263/-2047.533447
+CombatArea.addAreaPoint -2047.334839/2046.834961
+CombatArea.team 0
+CombatArea.vehicles 4
+CombatArea.layer 2
+CombatArea.usedByPathFinding 1
+

@@ -1,0 +1,34 @@
+<map>
+	<name> Jet_War </name>
+	<briefing locid="Selamat menikmati.
+
+Cocok untuk pemula dalam mengendarai jet
+
+
+Design map by Zentarus111
+
+Bot support by Zentarus111"></briefing>
+	<music> common/sound/menu/music/load_MEC_music.ogg </music>
+
+	<modes>
+		<mode type="gpm_cq">
+			<maptype ai="1" players="16" type="doubleassault" locid="GAMEMODE_DESCRIPTION_doubleassault"></maptype>
+			<maptype ai="1" players="32" type="doubleassault" locid="GAMEMODE_DESCRIPTION_doubleassault"></maptype>
+			<maptype players="64" type="doubleassault" locid="GAMEMODE_DESCRIPTION_doubleassault"></maptype>
+		</mode>
+		<mode type="sp1">
+			<maptype ai="1" players="16" type="doubleassault" locid="GAMEMODE_DESCRIPTION_doubleassault"></maptype>
+		</mode>
+		<mode type="sp2">
+			<maptype ai="1" players="32" type="doubleassault" locid="GAMEMODE_DESCRIPTION_doubleassault"></maptype>
+		</mode>
+		<mode type="sp3">
+			<maptype players="64" type="doubleassault" locid="GAMEMODE_DESCRIPTION_doubleassault"></maptype>
+		</mode>
+		<mode type="gpm_coop">
+			<maptype ai="1" players="16" type="headon" locid="GAMEMODE_DESCRIPTION_COOP_headon"></maptype>
+			<maptype ai="1" players="32" type="headon" locid="GAMEMODE_DESCRIPTION_COOP_headon"></maptype>
+			<maptype players="64" type="headon" locid="GAMEMODE_DESCRIPTION_COOP_headon"></maptype>
+		</mode>
+	</modes>
+</map>

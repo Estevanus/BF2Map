@@ -1,0 +1,54 @@
+rem ----------------------------------------------------------------
+rem ----------------------------INIT_SP-----------------------------
+rem -------------(menggantikan init.con utama pada sp)-------------
+rem ----------------------------------------------------------------
+
+rem ----------------------------SL Spawn----------------------------
+
+ObjectTemplate.active SoldierCamera
+ObjectTemplate.create SpawnPoint SquadLeaderSpawnPoint
+ObjectTemplate.PreCacheObject 1
+ObjectTemplate.setScatterSpawnPositions 1
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+
+rem --------------------------SP Settings---------------------------
+
+gameLogic.setTeamName 1 "CH"
+gameLogic.setTeamName 2 "US"
+
+gameLogic.setTeamLanguage 1 "Chinese"
+gameLogic.setTeamLanguage 2 "English"
+
+gameLogic.setTeamFlag 0 "flag_neutral"
+gameLogic.setTeamFlag 1 "flag_ch"
+gameLogic.setTeamFlag 2 "flag_us"
+
+gameLogic.setKit 1 0 "CH_Specops" "ch_light_soldier"
+gameLogic.setKit 2 0 "US_AT" "us_light_soldier"
+
+gameLogic.setKit 1 1 "CH_Sniper" "ch_light_soldier"
+gameLogic.setKit 2 1 "US_AT" "us_light_soldier"
+
+gameLogic.setKit 1 2 "CH_Assault" "ch_heavy_soldier"
+gameLogic.setKit 2 2 "US_AT" "us_heavy_soldier"
+
+gameLogic.setKit 1 3 "CH_Support" "ch_heavy_soldier"
+gameLogic.setKit 2 3 "US_AT" "us_heavy_soldier"
+
+gameLogic.setKit 1 4 "CH_Engineer" "ch_light_soldier"
+gameLogic.setKit 2 4 "US_AT" "us_light_soldier"
+
+gameLogic.setKit 1 5 "CH_Medic" "ch_light_soldier"
+gameLogic.setKit 2 5 "US_AT" "us_light_soldier"
+
+gameLogic.setKit 1 6 "CH_AT" "ch_heavy_soldier"
+gameLogic.setKit 2 6 "US_AT" "us_heavy_soldier"
+
+rem ---------------------------SP Tickets---------------------------
+
+gameLogic.setDefaultNumberOfTicketsEx 16 1 200
+gameLogic.setDefaultNumberOfTicketsEx 16 2 200
+gameLogic.setDefaultNumberOfTicketsEx 32 1 200
+gameLogic.setDefaultNumberOfTicketsEx 32 2 200
+gameLogic.setDefaultNumberOfTicketsEx 64 1 600
+gameLogic.setDefaultNumberOfTicketsEx 64 2 600
